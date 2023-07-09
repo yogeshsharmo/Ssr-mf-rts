@@ -1,0 +1,88 @@
+.skeleton {
+	background-color: #eeeeee;
+	color: #eeeeee;
+}
+
+.skeleton * {
+	content: "" !important;
+}
+
+.skeleton img {
+	object-position: -99999px 99999px;
+	background: rgb(202, 202, 202);
+	border-radius: 10px;
+	animation: blink 2s infinite;
+	-webkit-animation: blink 2s infinite;
+}
+
+.skeleton div,
+.skeleton ul,
+.skeleton section,
+.skeleton main,
+.skeleton header,
+.skeleton footer {
+	background: none !important;
+	background-color: #eeeeee;
+	color: #eee !important;
+	border-color: rgb(202, 202, 202) !important;
+	content: "" !important;
+}
+
+.skeleton div:hover,
+.skeleton button:hover,
+.skeleton ul:hover,
+.skeleton li:hover {
+	background: none;
+	text-decoration: none;
+	outline: none;
+	color: transparent !important;
+}
+
+.skeleton button,
+.skeleton input {
+	border-color: rgb(202, 202, 202) !important;
+	background-color: #eee !important;
+	background: none;
+	color: #eee !important;
+	content: "" !important;
+	animation: blink 2s infinite;
+}
+
+.skeleton h1,
+.skeleton h2,
+.skeleton h3,
+.skeleton h4,
+.skeleton h5,
+.skeleton h6,
+.skeleton p,
+.skeleton span,
+.skeleton li,
+.skeleton tr,
+.skeleton a,
+.skeleton svg {
+	background-color: #d3d3d3 !important;
+	border-radius: 10px;
+	margin: 5px;
+	color: #d3d3d3 !important;
+	/* padding: 5px; */
+	content: "" !important;
+	animation: blink 2s infinite;
+}
+
+.skeleton span {
+	display: inline-block;
+}
+
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
